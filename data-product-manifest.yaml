@@ -1,4 +1,4 @@
-version: 0.0.36
+version: 0.0.38
 jobId: "1019"
 jobName: Engine Parameters Details
 jobType: Source Aligned Data Product
@@ -494,8 +494,8 @@ transformation:
       (     select       *     from       Engine_Parameter_Data_AUT     where       (         (`Model
       Family` is not NULL)         and (ltrim (rtrim (`Model Family`)) !=
       '')       )   ) epda1 ON eqdt.eqdt_eqmt_code = regexp_replace
-      (epda1.`Equipment Code`, '-', '')   and ltrim (rtrim (regexp_replace
-      (eqdt.eqdt_engine_prefix, '-', '') )) = ltrim (rtrim (epda1.`Model
+      (epda1.`Equipment Code`, '-', '')   and ltrim (rtrim
+      (left(eqdt.eqdt_engine_prefix, 4 ) )) = ltrim (rtrim (epda1.`Model
       Family`)) WHERE   TO_DATE (eqdt.eqdt_date, 'dd/MM/yyyy') >= DATE_ADD
       (CURRENT_DATE(), -1095)   AND eqdt.eqdt_eqmt_code LIKE 'TW__S_'   AND
       (     eqdt.eqdt_engine_prefix LIKE '%AF21%'     OR eqdt.eqdt_engine_prefix
