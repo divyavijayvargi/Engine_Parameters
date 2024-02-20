@@ -1,0 +1,525 @@
+version: 0.0.36
+jobId: "1019"
+jobName: Engine Parameters Details
+jobType: Source Aligned Data Product
+alias: load_engine_parameter_details
+discoveryPort:
+  name: Engine Parameters Details
+inputPorts:
+  - alias: dets_egrp_1
+    isDynamic: true
+    tableLocation: s3://msil-cross-account-e-r8r79ymp7876xrrckn4rcxci9ucyhaps3b-s3alias/sr7/dets_de/dets_egrp/
+    optional:
+      persistDataFrame: false
+      enableDataReconciliation: false
+      enforceSchema: false
+      connection: Engine Parameters  S3 Connectivity
+      dataSetUrn: urn:dv:dataset:625f6b2d-8dd7-41ea-898d-40be74e11dec
+      loggingOptions:
+        printSchema: true
+        count: true
+        showData: true
+    type: readDeltaTable
+  - alias: dets_eqdt_1
+    isDynamic: true
+    tableLocation: s3://msil-cross-account-e-r8r79ymp7876xrrckn4rcxci9ucyhaps3b-s3alias/sr7/dets_de/dets_eqdt/
+    optional:
+      persistDataFrame: false
+      enableDataReconciliation: false
+      enforceSchema: false
+      connection: Engine Parameters  S3 Connectivity
+      dataSetUrn: urn:dv:dataset:97e8ce9f-89a2-48c8-8104-49beba3ad195
+      loggingOptions:
+        printSchema: true
+        count: true
+        showData: true
+    type: readDeltaTable
+  - alias: dets_eqmt_1
+    isDynamic: true
+    tableLocation: s3://msil-cross-account-e-r8r79ymp7876xrrckn4rcxci9ucyhaps3b-s3alias/sr7/dets_de/dets_eqmt/
+    optional:
+      persistDataFrame: false
+      enableDataReconciliation: false
+      enforceSchema: false
+      connection: Engine Parameters  S3 Connectivity
+      dataSetUrn: urn:dv:dataset:b29f4a6a-e124-44c3-92ff-c14d72246b73
+      loggingOptions:
+        printSchema: true
+        count: true
+        showData: true
+    type: readDeltaTable
+  - alias: Engine_Parameter_Data_AUT_1
+    isDynamic: true
+    path: s3://msil-dataverse-production/Manual_Masters/Engine_Parameters/Engine_Parameter_Data_AUT.csv
+    optional:
+      persistDataFrame: false
+      advanceOptions:
+        delimiter: ","
+      enableDataReconciliation: false
+      enforceSchema: false
+      connection: Engine Parameters  S3 Connectivity
+      dataSetUrn: urn:dv:dataset:83932d69-48ea-425c-aee0-656257e22ffb
+      loggingOptions:
+        printSchema: true
+        count: true
+        showData: true
+    type: inputDelimited
+productState:
+  isDynamic: true
+  alias: load_engine_parameter_details
+  retentionVersions: ""
+  logicalSchema:
+    properties:
+      engine_prefix:
+        type: STRING
+        description: None
+        sourceColumn: engine_prefix
+        sourceTable: dets_eqdt
+      engine_no:
+        type: STRING
+        description: None
+        sourceColumn: engine_no
+        sourceTable: dets_eqdt
+      oper_date:
+        type: STRING
+        description: None
+        sourceColumn: oper_date
+        sourceTable: dets_eqdt
+      machine_id:
+        type: STRING
+        description: None
+        sourceColumn: machine_id
+        sourceTable: dets_eqdt
+      description:
+        type: STRING
+        description: None
+        sourceColumn: description
+        sourceTable: dets_egrp
+      value_1:
+        type: STRING
+        description: None
+        sourceColumn: value_1
+        sourceTable: dets_eqdt
+      value_2:
+        type: STRING
+        description: None
+        sourceColumn: value_2
+        sourceTable: dets_eqdt
+      value_3:
+        type: STRING
+        description: None
+        sourceColumn: value_3
+        sourceTable: dets_eqdt
+      value_4:
+        type: STRING
+        description: None
+        sourceColumn: value_4
+        sourceTable: dets_eqdt
+      value_5:
+        type: STRING
+        description: None
+        sourceColumn: value_5
+        sourceTable: dets_eqdt
+      value_6:
+        type: STRING
+        description: None
+        sourceColumn: value_6
+        sourceTable: dets_eqdt
+      value_7:
+        type: STRING
+        description: None
+        sourceColumn: value_7
+        sourceTable: dets_eqdt
+      value_8:
+        type: STRING
+        description: None
+        sourceColumn: value_8
+        sourceTable: dets_eqdt
+      value_9:
+        type: STRING
+        description: None
+        sourceColumn: value_9
+        sourceTable: dets_eqdt
+      value_10:
+        type: STRING
+        description: None
+        sourceColumn: value_10
+        sourceTable: dets_eqdt
+      value_11:
+        type: STRING
+        description: None
+        sourceColumn: value_11
+        sourceTable: dets_eqdt
+      value_12:
+        type: STRING
+        description: None
+        sourceColumn: value_12
+        sourceTable: dets_eqdt
+      value_13:
+        type: STRING
+        description: None
+        sourceColumn: value_13
+        sourceTable: dets_eqdt
+      value_14:
+        type: STRING
+        description: None
+        sourceColumn: value_14
+        sourceTable: dets_eqdt
+      value_15:
+        type: STRING
+        description: None
+        sourceColumn: value_15
+        sourceTable: dets_eqdt
+      value_16:
+        type: STRING
+        description: None
+        sourceColumn: value_16
+        sourceTable: dets_eqdt
+      value_17:
+        type: STRING
+        description: None
+        sourceColumn: value_17
+        sourceTable: dets_eqdt
+      value_18:
+        type: STRING
+        description: None
+        sourceColumn: value_18
+        sourceTable: dets_eqdt
+      value_19:
+        type: STRING
+        description: None
+        sourceColumn: value_19
+        sourceTable: dets_eqdt
+      value_20:
+        type: STRING
+        description: None
+        sourceColumn: value_20
+        sourceTable: dets_eqdt
+      value_21:
+        type: STRING
+        description: None
+        sourceColumn: value_21
+        sourceTable: dets_eqdt
+      value_22:
+        type: STRING
+        description: None
+        sourceColumn: value_22
+        sourceTable: dets_eqdt
+      value_23:
+        type: STRING
+        description: None
+        sourceColumn: value_23
+        sourceTable: dets_eqdt
+      value_24:
+        type: STRING
+        description: None
+        sourceColumn: value_24
+        sourceTable: dets_eqdt
+      value_25:
+        type: STRING
+        description: None
+        sourceColumn: value_25
+        sourceTable: dets_eqdt
+      value_26:
+        type: STRING
+        description: None
+        sourceColumn: value_26
+        sourceTable: dets_eqdt
+      value_27:
+        type: STRING
+        description: None
+        sourceColumn: value_27
+        sourceTable: dets_eqdt
+      value_28:
+        type: STRING
+        description: None
+        sourceColumn: value_28
+        sourceTable: dets_eqdt
+      value_29:
+        type: STRING
+        description: None
+        sourceColumn: value_29
+        sourceTable: dets_eqdt
+      value_30:
+        type: STRING
+        description: None
+        sourceColumn: value_30
+        sourceTable: dets_eqdt
+      value_31:
+        type: STRING
+        description: None
+        sourceColumn: value_31
+        sourceTable: dets_eqdt
+      value_32:
+        type: STRING
+        description: None
+        sourceColumn: value_32
+        sourceTable: dets_eqdt
+      value_33:
+        type: STRING
+        description: None
+        sourceColumn: value_33
+        sourceTable: dets_eqdt
+      value_34:
+        type: STRING
+        description: None
+        sourceColumn: value_34
+        sourceTable: dets_eqdt
+      value_35:
+        type: STRING
+        description: None
+        sourceColumn: value_35
+        sourceTable: dets_eqdt
+      value_36:
+        type: STRING
+        description: None
+        sourceColumn: value_36
+        sourceTable: dets_eqdt
+      value_37:
+        type: STRING
+        description: None
+        sourceColumn: value_37
+        sourceTable: dets_eqdt
+      value_38:
+        type: STRING
+        description: None
+        sourceColumn: value_38
+        sourceTable: dets_eqdt
+      value_39:
+        type: STRING
+        description: None
+        sourceColumn: value_39
+        sourceTable: dets_eqdt
+      value_40:
+        type: STRING
+        description: None
+        sourceColumn: value_40
+        sourceTable: dets_eqdt
+      value_41:
+        type: STRING
+        description: None
+        sourceColumn: value_41
+        sourceTable: dets_eqdt
+      value_42:
+        type: STRING
+        description: None
+        sourceColumn: value_42
+        sourceTable: dets_eqdt
+      value_43:
+        type: STRING
+        description: None
+        sourceColumn: value_43
+        sourceTable: dets_eqdt
+      value_44:
+        type: STRING
+        description: None
+        sourceColumn: value_44
+        sourceTable: dets_eqdt
+      value_45:
+        type: STRING
+        description: None
+        sourceColumn: value_45
+        sourceTable: dets_eqdt
+      value_46:
+        type: STRING
+        description: None
+        sourceColumn: value_46
+        sourceTable: dets_eqdt
+      value_47:
+        type: STRING
+        description: None
+        sourceColumn: value_47
+        sourceTable: dets_eqdt
+      value_48:
+        type: STRING
+        description: None
+        sourceColumn: value_48
+        sourceTable: dets_eqdt
+      value_49:
+        type: STRING
+        description: None
+        sourceColumn: value_49
+        sourceTable: dets_eqdt
+      value_50:
+        type: STRING
+        description: None
+        sourceColumn: value_50
+        sourceTable: dets_eqdt
+      value_51:
+        type: STRING
+        description: None
+        sourceColumn: value_51
+        sourceTable: dets_eqdt
+      dt_filter:
+        type: STRING
+        description: None
+        sourceColumn: Derived
+        sourceTable: dets_eqdt
+      Equipment_name:
+        type: STRING
+        description: None
+        sourceColumn: value_45
+        sourceTable: Engine_Parameter_Data_AUT
+      Parameter_Name:
+        type: STRING
+        description: None
+        sourceColumn: Parameter Name
+        sourceTable: Engine_Parameter_Data_AUT
+      Unit/Decision:
+        type: STRING
+        description: None
+        sourceColumn: Unit/Decision
+        sourceTable: Engine_Parameter_Data_AUT
+      Line:
+        type: STRING
+        description: None
+        sourceColumn: Line
+        sourceTable: Engine_Parameter_Data_AUT
+      Model_Family:
+        type: STRING
+        description: None
+        sourceColumn: Model Family
+        sourceTable: Engine_Parameter_Data_AUT
+      Equipment_Code:
+        type: STRING
+        description: None
+        sourceColumn: Equipment Code
+        sourceTable: Engine_Parameter_Data_AUT
+      LSL:
+        type: STRING
+        description: None
+        sourceColumn: LSL
+        sourceTable: Engine_Parameter_Data_AUT
+      USL:
+        type: STRING
+        description: None
+        sourceColumn: USL
+        sourceTable: Engine_Parameter_Data_AUT
+      ETL_Inserted_Date:
+        type: DATETIME
+        description: " "
+        sourceColumn: ""
+        sourceTable: ""
+      ETL_Modified_Date:
+        type: DATETIME
+        description: " "
+        sourceColumn: ""
+        sourceTable: ""
+      ETL_Created_By:
+        type: STRING
+        description: " "
+        sourceColumn: ""
+        sourceTable: ""
+      ETL_Updated_By:
+        type: STRING
+        description: " "
+        sourceColumn: ""
+        sourceTable: ""
+  stateStoreType: loadDataIceberg
+  isProfilingEnabled: false
+  updateStrategy: Overwrite
+  tableName: msil_transformed_layer.Engine_Parameter_Details
+  warehousePath: s3://msil-dataverse-production/
+  catalogName: glue
+  optional:
+    persistDataFrame: false
+    enableDataReconciliation: false
+    enforceSchema: false
+    enforceSchemaMethod: Warning
+    catalogType: glue
+    loggingOptions:
+      printSchema: true
+      count: true
+      showData: true
+  refreshInterval: 30 5 * * *
+transformation:
+  - alias: query_engine_parameter_details
+    type: SQL
+    description: query_engine_parameter_details
+    query: SELECT   eqdt.eqdt_engine_prefix AS
+      engine_prefix,   eqdt.eqdt_engine_number AS engine_no,   eqdt.eqdt_date AS
+      oper_date,   eqdt.eqdt_eqmt_code AS machine_id,   egrp.egrp_desc AS
+      description,   eqdt.eqdt_value_01 AS value_1,   eqdt.eqdt_value_02 AS
+      value_2,   eqdt.eqdt_value_03 AS value_3,   eqdt.eqdt_value_04 AS
+      value_4,   eqdt.eqdt_value_05 AS value_5,   eqdt.eqdt_value_06 AS
+      value_6,   eqdt.eqdt_value_07 AS value_7,   eqdt.eqdt_value_08 AS
+      value_8,   eqdt.eqdt_value_09 AS value_9,   eqdt.eqdt_value_10 AS
+      value_10,   eqdt.eqdt_value_11 AS value_11,   eqdt.eqdt_value_12 AS
+      value_12,   eqdt.eqdt_value_13 AS value_13,   eqdt.eqdt_value_14 AS
+      value_14,   eqdt.eqdt_value_15 AS value_15,   eqdt.eqdt_value_16 AS
+      value_16,   eqdt.eqdt_value_17 AS value_17,   eqdt.eqdt_value_18 AS
+      value_18,   eqdt.eqdt_value_19 AS value_19,   eqdt.eqdt_value_20 AS
+      value_20,   eqdt.eqdt_value_21 AS value_21,   eqdt.eqdt_value_22 AS
+      value_22,   eqdt.eqdt_value_23 AS value_23,   eqdt.eqdt_value_24 AS
+      value_24,   eqdt.eqdt_value_25 AS value_25,   eqdt.eqdt_value_26 AS
+      value_26,   eqdt.eqdt_value_27 AS value_27,   eqdt.eqdt_value_28 AS
+      value_28,   eqdt.eqdt_value_29 AS value_29,   eqdt.eqdt_value_30 AS
+      value_30,   eqdt.eqdt_value_31 AS value_31,   eqdt.eqdt_value_32 AS
+      value_32,   eqdt.eqdt_value_33 AS value_33,   eqdt.eqdt_value_34 AS
+      value_34,   eqdt.eqdt_value_35 AS value_35,   eqdt.eqdt_value_36 AS
+      value_36,   eqdt.eqdt_value_37 AS value_37,   eqdt.eqdt_value_38 AS
+      value_38,   eqdt.eqdt_value_39 AS value_39,   eqdt.eqdt_value_40 AS
+      value_40,   eqdt.eqdt_value_41 AS value_41,   eqdt.eqdt_value_42 AS
+      value_42,   eqdt.eqdt_value_43 AS value_43,   eqdt.eqdt_value_44 AS
+      value_44,   eqdt.eqdt_value_45 AS value_45,   eqdt.eqdt_value_46 AS
+      value_46,   eqdt.eqdt_value_47 AS value_47,   eqdt.eqdt_value_48 AS
+      value_48,   eqdt.eqdt_value_49 AS value_49,   eqdt.eqdt_value_50 AS
+      value_50,   eqdt.eqdt_value_51 AS value_51,   TO_DATE (eqdt.eqdt_date,
+      'dd/MM/yyyy') AS dt_filter,   coalesce(epda.`Equipment name`,
+      epda1.`Equipment name`, NULL) as
+      Equipment_name,   coalesce(epda.`Parameter Name`, epda1.`Parameter Name`,
+      NULL) as Parameter_Name,   coalesce(epda.`Unit/Decision`,
+      epda1.`Unit/Decision`, NULL) as `Unit/Decision`,   coalesce(epda.`Line `,
+      epda1.`Line `, NULL) as Line ,   coalesce(epda.`Model Family`,
+      epda1.`Model Family`, NULL) as Model_Family,   CASE     WHEN
+      coalesce(epda.`Equipment Code`, epda1.`Equipment Code`, '') = 'r' THEN
+      NULL     WHEN coalesce(epda.`Equipment Code`, epda1.`Equipment Code`, '')
+      = 'NA' THEN NULL     ELSE regexp_replace(coalesce(epda.`Equipment Code`,
+      epda1.`Equipment Code`, ''), '-', '')   END AS
+      Equipment_Code,   CASE     WHEN coalesce(epda.LSL, epda1.LSL, '')  = 'r'
+      THEN NULL     WHEN coalesce(epda.LSL, epda1.LSL, '') = 'NA' THEN
+      NULL     ELSE coalesce(epda.LSL, epda1.LSL, '')   END AS
+      LSL,   CASE     WHEN coalesce(epda.USL, epda1.USL, '') = 'r' THEN
+      NULL     WHEN coalesce(epda.USL, epda1.USL, '') = 'NA' THEN NULL     ELSE
+      coalesce(epda.USL, epda1.USL, '')   END AS USL,   current_timestamp() as
+      etl_inserted_date,   current_timestamp() as
+      etl_modified_date,   'platform_admin' as
+      etl_created_by,   'platform_admin' as etl_updated_by FROM   dets_eqmt
+      eqmt   join dets_eqdt eqdt ON eqmt.eqmt_code = eqdt.eqdt_eqmt_code   JOIN
+      dets_egrp egrp ON eqmt.eqmt_group_id = egrp.egrp_id   left JOIN
+      (     select       *     from       Engine_Parameter_Data_AUT     where       (         (`Model
+      Family` is NULL)         or (ltrim (rtrim (`Model Family`)) =
+      '')       )   ) epda ON eqdt.eqdt_eqmt_code = regexp_replace
+      (epda.`Equipment Code`, '-', '')   left JOIN
+      (     select       *     from       Engine_Parameter_Data_AUT     where       (         (`Model
+      Family` is not NULL)         and (ltrim (rtrim (`Model Family`)) !=
+      '')       )   ) epda1 ON eqdt.eqdt_eqmt_code = regexp_replace
+      (epda1.`Equipment Code`, '-', '')   and ltrim (rtrim (regexp_replace
+      (eqdt.eqdt_engine_prefix, '-', '') )) = ltrim (rtrim (epda1.`Model
+      Family`)) WHERE   TO_DATE (eqdt.eqdt_date, 'dd/MM/yyyy') >= DATE_ADD
+      (CURRENT_DATE(), -1095)   AND eqdt.eqdt_eqmt_code LIKE 'TW__S_'   AND
+      (     eqdt.eqdt_engine_prefix LIKE '%AF21%'     OR eqdt.eqdt_engine_prefix
+      LIKE '%AF24%'     OR eqdt.eqdt_engine_prefix LIKE '%AEA1%'     OR
+      eqdt.eqdt_engine_prefix LIKE '%BGA1%'     OR eqdt.eqdt_engine_prefix LIKE
+      '%BGA2%'     OR eqdt.eqdt_engine_prefix LIKE '%BGA3%'     OR
+      eqdt.eqdt_engine_prefix LIKE '%BGA4%'     OR eqdt.eqdt_engine_prefix LIKE
+      '%BGA5%'     OR eqdt.eqdt_engine_prefix LIKE '%EJA1%'   ) ORDER
+      BY   eqdt.eqdt_engine_number
+    sequenceNo: 5
+    references:
+      - alias: dets_eqdt_1
+        sqlReference: dets_eqdt
+      - alias: dets_egrp_1
+        sqlReference: dets_egrp
+      - alias: dets_eqmt_1
+        sqlReference: dets_eqmt
+      - alias: Engine_Parameter_Data_AUT_1
+        sqlReference: Engine_Parameter_Data_AUT
+controlPort:
+  dataQualityRules: {}
+outputPort:
+  subscriptionChannels:
+    - channelType: Postgres
+      queryType: SQL
+    - channelType: Dataproduct
+      queryType: SQL
