@@ -1,4 +1,4 @@
-version: 0.0.39
+version: 0.0.40
 jobId: "1019"
 jobName: Engine Parameters Details
 jobType: Source Aligned Data Product
@@ -516,7 +516,19 @@ transformation:
       - alias: Engine_Parameter_Data_AUT_1
         sqlReference: Engine_Parameter_Data_AUT
 controlPort:
-  dataQualityRules: {}
+  dataQualityRules:
+    NullCombinationCheck:
+      productState:
+        checks:
+          - columns:
+              - engine_prefix
+          - columns:
+              - engine_no
+          - columns:
+              - oper_date
+          - columns:
+              - machine_id
+        referenceAlias: load_engine_parameter_details
 outputPort:
   subscriptionChannels:
     - channelType: Postgres
