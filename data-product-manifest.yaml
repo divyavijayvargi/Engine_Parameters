@@ -1,4 +1,4 @@
-version: 0.0.40
+version: 0.0.43
 jobId: "1019"
 jobName: Engine Parameters Details
 jobType: Source Aligned Data Product
@@ -351,7 +351,7 @@ productState:
         sourceColumn: value_51
         sourceTable: dets_eqdt
       dt_filter:
-        type: STRING
+        type: DATETIME
         description: None
         sourceColumn: Derived
         sourceTable: dets_eqdt
@@ -433,9 +433,19 @@ productState:
       showData: true
   refreshInterval: 30 5 * * *
 transformation:
-  - alias: query_engine_parameter_details
-    type: SQL
+  - isDynamic: true
+    alias: query_engine_parameter_details
     description: query_engine_parameter_details
+    sequence: 5
+    inputDataFrameList:
+      - inputDataFrame: dets_eqdt_1
+        tempViewName: dets_eqdt
+      - inputDataFrame: dets_egrp_1
+        tempViewName: dets_egrp
+      - inputDataFrame: dets_eqmt_1
+        tempViewName: dets_eqmt
+      - inputDataFrame: Engine_Parameter_Data_AUT_1
+        tempViewName: Engine_Parameter_Data_AUT
     query: SELECT   eqdt.eqdt_engine_prefix AS
       engine_prefix,   eqdt.eqdt_engine_number AS engine_no,   eqdt.eqdt_date AS
       oper_date,   eqdt.eqdt_eqmt_code AS machine_id,   egrp.egrp_desc AS
@@ -505,16 +515,13 @@ transformation:
       eqdt.eqdt_engine_prefix LIKE '%BGA4%'     OR eqdt.eqdt_engine_prefix LIKE
       '%BGA5%'     OR eqdt.eqdt_engine_prefix LIKE '%EJA1%'   ) ORDER
       BY   eqdt.eqdt_engine_number
-    sequenceNo: 5
-    references:
-      - alias: dets_eqdt_1
-        sqlReference: dets_eqdt
-      - alias: dets_egrp_1
-        sqlReference: dets_egrp
-      - alias: dets_eqmt_1
-        sqlReference: dets_eqmt
-      - alias: Engine_Parameter_Data_AUT_1
-        sqlReference: Engine_Parameter_Data_AUT
+    optional:
+      persistDataFrame: false
+      loggingOptions:
+        printSchema: true
+        count: true
+        showData: true
+    type: operationThroughSqlQuery
 controlPort:
   dataQualityRules:
     NullCombinationCheck:
