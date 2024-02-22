@@ -1,4 +1,4 @@
-version: 0.0.5
+version: 0.0.6
 jobId: "1042"
 jobName: Engine Parameter Summary
 jobType: Aggregated Data Product
@@ -35,7 +35,7 @@ productState:
         sourceColumn: engine_no
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       oper_date:
-        type: STRING
+        type: DATETIME
         description: None
         sourceColumn: oper_date
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
@@ -532,7 +532,19 @@ transformation:
         showData: true
     type: operationThroughSqlQuery
 controlPort:
-  dataQualityRules: {}
+  dataQualityRules:
+    NullCombinationCheck:
+      productState:
+        checks:
+          - columns:
+              - engine_prefix
+          - columns:
+              - engine_no
+          - columns:
+              - oper_date
+          - columns:
+              - machine_id
+        referenceAlias: load_adp_engine_parameters
 outputPort:
   subscriptionChannels:
     - channelType: Postgres
