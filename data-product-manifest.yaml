@@ -1,4 +1,4 @@
-version: 0.0.43
+version: 0.0.44
 jobId: "1019"
 jobName: Engine Parameters Details
 jobType: Source Aligned Data Product
@@ -81,7 +81,7 @@ productState:
         sourceColumn: engine_no
         sourceTable: dets_eqdt
       oper_date:
-        type: STRING
+        type: DATETIME
         description: None
         sourceColumn: oper_date
         sourceTable: dets_eqdt
