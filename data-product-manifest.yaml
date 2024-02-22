@@ -1,0 +1,541 @@
+version: 0.0.5
+jobId: "1042"
+jobName: Engine Parameter Summary
+jobType: Aggregated Data Product
+alias: load_adp_engine_parameters
+discoveryPort:
+  name: Engine Parameter Summary
+inputPorts:
+  - alias: Engine_Parameters_Details_1
+    isDynamic: true
+    dataProductUrn: urn:dv:dataproduct:ff5cd504-c4a4-4861-8686-fa4a80cff246
+    filter: ""
+    projection: ""
+    optional:
+      persistDataFrame: false
+      loggingOptions:
+        printSchema: true
+        count: true
+        showData: true
+    type: dataproduct
+productState:
+  isDynamic: true
+  alias: load_adp_engine_parameters
+  retentionVersions: ""
+  logicalSchema:
+    properties:
+      engine_prefix:
+        type: STRING
+        description: None
+        sourceColumn: engine_prefix
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      engine_no:
+        type: STRING
+        description: None
+        sourceColumn: engine_no
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      oper_date:
+        type: STRING
+        description: None
+        sourceColumn: oper_date
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      machine_id:
+        type: STRING
+        description: None
+        sourceColumn: machine_id
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      description:
+        type: STRING
+        description: None
+        sourceColumn: description
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_1:
+        type: STRING
+        description: None
+        sourceColumn: value_1
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_2:
+        type: STRING
+        description: None
+        sourceColumn: value_2
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_3:
+        type: STRING
+        description: None
+        sourceColumn: value_3
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_4:
+        type: STRING
+        description: None
+        sourceColumn: value_4
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_5:
+        type: STRING
+        description: None
+        sourceColumn: value_5
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_6:
+        type: STRING
+        description: None
+        sourceColumn: value_6
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_7:
+        type: STRING
+        description: None
+        sourceColumn: value_7
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_8:
+        type: STRING
+        description: None
+        sourceColumn: value_8
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_9:
+        type: STRING
+        description: None
+        sourceColumn: value_9
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_10:
+        type: STRING
+        description: None
+        sourceColumn: value_10
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_11:
+        type: STRING
+        description: None
+        sourceColumn: value_11
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_12:
+        type: STRING
+        description: None
+        sourceColumn: value_12
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_13:
+        type: STRING
+        description: None
+        sourceColumn: value_13
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_14:
+        type: STRING
+        description: None
+        sourceColumn: value_14
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_15:
+        type: STRING
+        description: None
+        sourceColumn: value_15
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_16:
+        type: STRING
+        description: None
+        sourceColumn: value_16
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_17:
+        type: STRING
+        description: None
+        sourceColumn: value_17
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_18:
+        type: STRING
+        description: None
+        sourceColumn: value_18
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_19:
+        type: STRING
+        description: None
+        sourceColumn: value_19
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_20:
+        type: STRING
+        description: None
+        sourceColumn: value_20
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_21:
+        type: STRING
+        description: None
+        sourceColumn: value_21
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_22:
+        type: STRING
+        description: None
+        sourceColumn: value_22
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_23:
+        type: STRING
+        description: None
+        sourceColumn: value_23
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_24:
+        type: STRING
+        description: None
+        sourceColumn: value_24
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_25:
+        type: STRING
+        description: None
+        sourceColumn: value_25
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_26:
+        type: STRING
+        description: None
+        sourceColumn: value_26
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_27:
+        type: STRING
+        description: None
+        sourceColumn: value_27
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_28:
+        type: STRING
+        description: None
+        sourceColumn: value_28
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_29:
+        type: STRING
+        description: None
+        sourceColumn: value_29
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_30:
+        type: STRING
+        description: None
+        sourceColumn: value_30
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_31:
+        type: STRING
+        description: None
+        sourceColumn: value_31
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_32:
+        type: STRING
+        description: None
+        sourceColumn: value_32
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_33:
+        type: STRING
+        description: None
+        sourceColumn: value_33
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_34:
+        type: STRING
+        description: None
+        sourceColumn: value_34
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_35:
+        type: STRING
+        description: None
+        sourceColumn: value_35
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_36:
+        type: STRING
+        description: None
+        sourceColumn: value_36
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_37:
+        type: STRING
+        description: None
+        sourceColumn: value_37
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_38:
+        type: STRING
+        description: None
+        sourceColumn: value_38
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_39:
+        type: STRING
+        description: None
+        sourceColumn: value_39
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_40:
+        type: STRING
+        description: None
+        sourceColumn: value_40
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_41:
+        type: STRING
+        description: None
+        sourceColumn: value_41
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_42:
+        type: STRING
+        description: None
+        sourceColumn: value_42
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_43:
+        type: STRING
+        description: None
+        sourceColumn: value_43
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_44:
+        type: STRING
+        description: None
+        sourceColumn: value_44
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_45:
+        type: STRING
+        description: None
+        sourceColumn: value_45
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_46:
+        type: STRING
+        description: None
+        sourceColumn: value_46
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_47:
+        type: STRING
+        description: None
+        sourceColumn: value_47
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_48:
+        type: STRING
+        description: None
+        sourceColumn: value_48
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_49:
+        type: STRING
+        description: None
+        sourceColumn: value_49
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_50:
+        type: STRING
+        description: None
+        sourceColumn: value_50
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      value_51:
+        type: STRING
+        description: None
+        sourceColumn: value_51
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      dt_filter:
+        type: DATETIME
+        description: None
+        sourceColumn: dt_filter
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      Equipment_name:
+        type: STRING
+        description: None
+        sourceColumn: Equipment_name
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      Parameter_Name:
+        type: STRING
+        description: None
+        sourceColumn: Parameter_Name
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      Unit/Decision:
+        type: STRING
+        description: None
+        sourceColumn: Unit/Decision
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      Line:
+        type: STRING
+        description: None
+        sourceColumn: Line
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      Model_Family:
+        type: STRING
+        description: None
+        sourceColumn: Model_Family
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      Equipment_Code:
+        type: STRING
+        description: None
+        sourceColumn: Equipment_Code
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      LSL:
+        type: STRING
+        description: None
+        sourceColumn: LSL
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      USL:
+        type: STRING
+        description: None
+        sourceColumn: USL
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      etl_inserted_date:
+        type: DATETIME
+        description: None
+        sourceColumn: ""
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      etl_modified_date:
+        type: DATETIME
+        description: None
+        sourceColumn: ""
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      etl_created_by:
+        type: STRING
+        description: None
+        sourceColumn: ""
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+      etl_updated_by:
+        type: STRING
+        description: None
+        sourceColumn: ""
+        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+  stateStoreType: loadDataIceberg
+  isProfilingEnabled: false
+  updateStrategy: Overwrite
+  tableName: msil_transformed_layer.Engine_Parameter_Summary
+  warehousePath: s3://msil-dataverse-production/
+  catalogName: glue
+  optional:
+    persistDataFrame: false
+    enableDataReconciliation: false
+    enforceSchema: false
+    enforceSchemaMethod: Warning
+    catalogType: glue
+    loggingOptions:
+      printSchema: true
+      count: true
+      showData: true
+  refreshInterval: None
+transformation:
+  - isDynamic: true
+    alias: query_engineparameters_adp
+    description: query_engineparameters_adp
+    sequence: 2
+    inputDataFrameList:
+      - inputDataFrame: Engine_Parameters_Details_1
+        tempViewName: SADP_ENGINE_PARAMETER_DETAILS
+    query: SELECT   SADP_ENGINE_PARAMETER_DETAILS.engine_prefix,   SADP_ENGINE_PARAMETER_DETAILS.engine_no,   SADP_ENGINE_PARAMETER_DETAILS.oper_date,   SADP_ENGINE_PARAMETER_DETAILS.machine_id,   SADP_ENGINE_PARAMETER_DETAILS.description,   SADP_ENGINE_PARAMETER_DETAILS.value_1,   SADP_ENGINE_PARAMETER_DETAILS.value_2,   SADP_ENGINE_PARAMETER_DETAILS.value_3,   CASE     WHEN
+      regexp_count (       SADP_ENGINE_PARAMETER_DETAILS.value_4,       '^[0-9
+      .]+$'     ) = 1     AND trim(SADP_ENGINE_PARAMETER_DETAILS.value_4) NOT
+      LIKE '%.%' THEN CASE       WHEN
+      trim(SADP_ENGINE_PARAMETER_DETAILS.value_4) LIKE '% %' THEN replace
+      (         trim(SADP_ENGINE_PARAMETER_DETAILS.value_4),         '
+      ',         '.0'       )       WHEN length
+      (trim(SADP_ENGINE_PARAMETER_DETAILS.value_4)) > 2 THEN concat
+      (         substring(trim(SADP_ENGINE_PARAMETER_DETAILS.value_4), 1,
+      2),         '.',         substring(           trim(SADP_ENGINE_PARAMETER_DETAILS.value_4),           3,           length
+      (trim(SADP_ENGINE_PARAMETER_DETAILS.value_4))         )       )       WHEN
+      length (trim(SADP_ENGINE_PARAMETER_DETAILS.value_4)) <= 2       AND
+      trim(SADP_ENGINE_PARAMETER_DETAILS.value_4) <> '.'       AND
+      trim(SADP_ENGINE_PARAMETER_DETAILS.value_4) <> ','       AND
+      trim(SADP_ENGINE_PARAMETER_DETAILS.value_4) <> '' THEN
+      cast(         trim(SADP_ENGINE_PARAMETER_DETAILS.value_4) as decimal(20,
+      1)       )       ELSE NULL     END     ELSE
+      SADP_ENGINE_PARAMETER_DETAILS.value_4   END AS
+      value_4,   SADP_ENGINE_PARAMETER_DETAILS.value_5,   SADP_ENGINE_PARAMETER_DETAILS.value_6,   CASE     WHEN
+      regexp_count (       CAST(SADP_ENGINE_PARAMETER_DETAILS.value_7 AS
+      STRING),       '^[0-9 .]+$'     ) = 1     AND
+      TRIM(       CAST(SADP_ENGINE_PARAMETER_DETAILS.value_7 AS STRING)     )
+      NOT LIKE '%.%' THEN CASE       WHEN
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_7 AS
+      STRING)       ) LIKE '% %' THEN regexp_replace
+      (         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_7 AS
+      STRING)         ),         ' ',         '.0'       )       WHEN length
+      (         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_7 AS
+      STRING)         )       ) > 2 THEN CONCAT
+      (         substring(           TRIM(             CAST(SADP_ENGINE_PARAMETER_DETAILS.value_7
+      AS
+      STRING)           ),           1,           2         ),         '.',         substring(           TRIM(             CAST(SADP_ENGINE_PARAMETER_DETAILS.value_7
+      AS STRING)           ),           3         )       )       WHEN length
+      (         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_7 AS
+      STRING)         )       ) <= 2       AND
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_7 AS
+      STRING)       ) <> '.'       AND
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_7 AS
+      STRING)       ) <> ','       AND
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_7 AS
+      STRING)       ) <> '' THEN
+      CAST(         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_7
+      AS STRING)         ) AS DECIMAL(20, 1)       )       ELSE
+      NULL     END     ELSE SADP_ENGINE_PARAMETER_DETAILS.value_7   END AS
+      value_7,   SADP_ENGINE_PARAMETER_DETAILS.value_8,   SADP_ENGINE_PARAMETER_DETAILS.value_9,   CASE     WHEN
+      regexp_count (       CAST(SADP_ENGINE_PARAMETER_DETAILS.value_10 AS
+      STRING),       '^[0-9 .]+$'     ) = 1     AND
+      TRIM(       CAST(SADP_ENGINE_PARAMETER_DETAILS.value_10 AS STRING)     )
+      NOT LIKE '%.%' THEN CASE       WHEN
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_10 AS
+      STRING)       ) LIKE '% %' THEN regexp_replace
+      (         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_10 AS
+      STRING)         ),         ' ',         '.0'       )       WHEN length
+      (         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_10 AS
+      STRING)         )       ) > 2 THEN CONCAT
+      (         substring(           TRIM(             CAST(SADP_ENGINE_PARAMETER_DETAILS.value_10
+      AS
+      STRING)           ),           1,           2         ),         '.',         substring(           TRIM(             CAST(SADP_ENGINE_PARAMETER_DETAILS.value_10
+      AS STRING)           ),           3         )       )       WHEN length
+      (         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_10 AS
+      STRING)         )       ) <= 2       AND
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_10 AS
+      STRING)       ) <> '.'       AND
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_10 AS
+      STRING)       ) <> ','       AND
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_10 AS
+      STRING)       ) <> '' THEN
+      CAST(         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_10
+      AS STRING)         ) AS DECIMAL(20, 1)       )       ELSE
+      NULL     END     ELSE SADP_ENGINE_PARAMETER_DETAILS.value_10   END AS
+      value_10,   SADP_ENGINE_PARAMETER_DETAILS.value_11,   SADP_ENGINE_PARAMETER_DETAILS.value_12,   CASE     WHEN
+      regexp_count (       CAST(SADP_ENGINE_PARAMETER_DETAILS.value_13 AS
+      STRING),       '^[0-9 .]+$'     ) = 1     AND
+      TRIM(       CAST(SADP_ENGINE_PARAMETER_DETAILS.value_13 AS STRING)     )
+      NOT LIKE '%.%' THEN CASE       WHEN
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_13 AS
+      STRING)       ) LIKE '% %' THEN regexp_replace
+      (         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_13 AS
+      STRING)         ),         ' ',         '.0'       )       WHEN length
+      (         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_13 AS
+      STRING)         )       ) > 2 THEN CONCAT
+      (         substring(           TRIM(             CAST(SADP_ENGINE_PARAMETER_DETAILS.value_13
+      AS
+      STRING)           ),           1,           2         ),         '.',         substring(           TRIM(             CAST(SADP_ENGINE_PARAMETER_DETAILS.value_13
+      AS STRING)           ),           3         )       )       WHEN length
+      (         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_13 AS
+      STRING)         )       ) <= 2       AND
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_13 AS
+      STRING)       ) <> '.'       AND
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_13 AS
+      STRING)       ) <> ','       AND
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_13 AS
+      STRING)       ) <> '' THEN
+      CAST(         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_13
+      AS STRING)         ) AS DECIMAL(20, 1)       )       ELSE
+      NULL     END     ELSE SADP_ENGINE_PARAMETER_DETAILS.value_13   END AS
+      value_13,   SADP_ENGINE_PARAMETER_DETAILS.value_14,   SADP_ENGINE_PARAMETER_DETAILS.value_15,   CASE     WHEN
+      regexp_count (       CAST(         SADP_ENGINE_PARAMETER_DETAILS.value_16
+      AS STRING       ),       '^[0-9 .]+$'     ) = 1     AND
+      TRIM(       CAST(         SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING       )     ) NOT LIKE '%.%' THEN CASE       WHEN
+      TRIM(         CAST(           SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING         )       ) LIKE '% %' THEN regexp_replace
+      (         TRIM(           CAST(             SADP_ENGINE_PARAMETER_DETAILS.value_16
+      AS STRING           )         ),         '
+      ',         '.0'       )       WHEN length
+      (         TRIM(           CAST(             SADP_ENGINE_PARAMETER_DETAILS.value_16
+      AS STRING           )         )       ) > 2 THEN CONCAT
+      (         substring(           TRIM(             CAST(               SADP_ENGINE_PARAMETER_DETAILS.value_16
+      AS
+      STRING             )           ),           1,           2         ),         '.',         substring(           TRIM(             CAST(               SADP_ENGINE_PARAMETER_DETAILS.value_16
+      AS
+      STRING             )           ),           3         )       )       WHEN
+      length
+      (         TRIM(           CAST(             SADP_ENGINE_PARAMETER_DETAILS.value_16
+      AS STRING           )         )       ) <= 2       AND
+      TRIM(         CAST(           SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING         )       ) <> '.'       AND
+      TRIM(         CAST(           SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING         )       ) <> ','       AND
+      TRIM(         CAST(           SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING         )       ) <> '' THEN
+      CAST(         TRIM(           CAST(             SADP_ENGINE_PARAMETER_DETAILS.value_16
+      AS STRING           )         ) AS DECIMAL(20, 1)       )       ELSE
+      NULL     END     ELSE SADP_ENGINE_PARAMETER_DETAILS.value_16   END AS
+      value_16,   SADP_ENGINE_PARAMETER_DETAILS.value_17,   SADP_ENGINE_PARAMETER_DETAILS.value_18,   SADP_ENGINE_PARAMETER_DETAILS.value_19,   SADP_ENGINE_PARAMETER_DETAILS.value_20,   SADP_ENGINE_PARAMETER_DETAILS.value_21,   SADP_ENGINE_PARAMETER_DETAILS.value_22,   SADP_ENGINE_PARAMETER_DETAILS.value_23,   SADP_ENGINE_PARAMETER_DETAILS.value_24,   SADP_ENGINE_PARAMETER_DETAILS.value_25,   SADP_ENGINE_PARAMETER_DETAILS.value_26,   SADP_ENGINE_PARAMETER_DETAILS.value_27,   SADP_ENGINE_PARAMETER_DETAILS.value_28,   SADP_ENGINE_PARAMETER_DETAILS.value_29,   SADP_ENGINE_PARAMETER_DETAILS.value_30,   SADP_ENGINE_PARAMETER_DETAILS.value_31,   SADP_ENGINE_PARAMETER_DETAILS.value_32,   SADP_ENGINE_PARAMETER_DETAILS.value_33,   SADP_ENGINE_PARAMETER_DETAILS.value_34,   SADP_ENGINE_PARAMETER_DETAILS.value_35,   SADP_ENGINE_PARAMETER_DETAILS.value_36,   SADP_ENGINE_PARAMETER_DETAILS.value_37,   SADP_ENGINE_PARAMETER_DETAILS.value_38,   SADP_ENGINE_PARAMETER_DETAILS.value_39,   SADP_ENGINE_PARAMETER_DETAILS.value_40,   SADP_ENGINE_PARAMETER_DETAILS.value_41,   SADP_ENGINE_PARAMETER_DETAILS.value_42,   SADP_ENGINE_PARAMETER_DETAILS.value_43,   SADP_ENGINE_PARAMETER_DETAILS.value_44,   SADP_ENGINE_PARAMETER_DETAILS.value_45,   SADP_ENGINE_PARAMETER_DETAILS.value_46,   SADP_ENGINE_PARAMETER_DETAILS.value_47,   SADP_ENGINE_PARAMETER_DETAILS.value_48,   SADP_ENGINE_PARAMETER_DETAILS.value_49,   SADP_ENGINE_PARAMETER_DETAILS.value_50,   SADP_ENGINE_PARAMETER_DETAILS.value_51,   SADP_ENGINE_PARAMETER_DETAILS.dt_filter,   SADP_ENGINE_PARAMETER_DETAILS.Equipment_name,   SADP_ENGINE_PARAMETER_DETAILS.Parameter_Name,   SADP_ENGINE_PARAMETER_DETAILS.`Unit/Decision`,   SADP_ENGINE_PARAMETER_DETAILS.Line,   SADP_ENGINE_PARAMETER_DETAILS.Model_Family,   SADP_ENGINE_PARAMETER_DETAILS.Equipment_Code,   SADP_ENGINE_PARAMETER_DETAILS.LSL,   SADP_ENGINE_PARAMETER_DETAILS.USL,   current_timestamp()
+      as etl_inserted_date,   current_timestamp() as
+      etl_modified_date,   'platform_admin' as
+      etl_created_by,   'platform_admin' as etl_updated_by
+      FROM   SADP_ENGINE_PARAMETER_DETAILS;
+    optional:
+      persistDataFrame: false
+      loggingOptions:
+        printSchema: true
+        count: true
+        showData: true
+    type: operationThroughSqlQuery
+controlPort:
+  dataQualityRules: {}
+outputPort:
+  subscriptionChannels:
+    - channelType: Postgres
+      queryType: SQL
+    - channelType: Dataproduct
+      queryType: SQL
