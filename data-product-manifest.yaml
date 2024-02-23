@@ -1,7 +1,8 @@
-version: 0.0.44
+version: 0.0.47
 jobId: "1019"
 jobName: Engine Parameters Details
 jobType: Source Aligned Data Product
+domain: production
 alias: load_engine_parameter_details
 discoveryPort:
   name: Engine Parameters Details
@@ -72,353 +73,353 @@ productState:
     properties:
       engine_prefix:
         type: STRING
-        description: None
+        description: Model Code of  Engine
         sourceColumn: engine_prefix
         sourceTable: dets_eqdt
       engine_no:
         type: STRING
-        description: None
+        description: ID of Engine
         sourceColumn: engine_no
         sourceTable: dets_eqdt
       oper_date:
         type: DATETIME
-        description: None
+        description: Operation Date
         sourceColumn: oper_date
         sourceTable: dets_eqdt
       machine_id:
         type: STRING
-        description: None
+        description: Id of Machine or Equipment involved
         sourceColumn: machine_id
         sourceTable: dets_eqdt
       description:
         type: STRING
-        description: None
+        description: Equipment Description
         sourceColumn: description
         sourceTable: dets_egrp
       value_1:
         type: STRING
-        description: None
+        description: Parameter Value 1
         sourceColumn: value_1
         sourceTable: dets_eqdt
       value_2:
         type: STRING
-        description: None
+        description: Parameter Value 2
         sourceColumn: value_2
         sourceTable: dets_eqdt
       value_3:
         type: STRING
-        description: None
+        description: Parameter Value 3
         sourceColumn: value_3
         sourceTable: dets_eqdt
       value_4:
         type: STRING
-        description: None
+        description: Parameter Value 4
         sourceColumn: value_4
         sourceTable: dets_eqdt
       value_5:
         type: STRING
-        description: None
+        description: Parameter Value 5
         sourceColumn: value_5
         sourceTable: dets_eqdt
       value_6:
         type: STRING
-        description: None
+        description: Parameter Value 6
         sourceColumn: value_6
         sourceTable: dets_eqdt
       value_7:
         type: STRING
-        description: None
+        description: Parameter Value 7
         sourceColumn: value_7
         sourceTable: dets_eqdt
       value_8:
         type: STRING
-        description: None
+        description: Parameter Value 8
         sourceColumn: value_8
         sourceTable: dets_eqdt
       value_9:
         type: STRING
-        description: None
+        description: Parameter Value 9
         sourceColumn: value_9
         sourceTable: dets_eqdt
       value_10:
         type: STRING
-        description: None
+        description: Parameter Value 10
         sourceColumn: value_10
         sourceTable: dets_eqdt
       value_11:
         type: STRING
-        description: None
+        description: Parameter Value 11
         sourceColumn: value_11
         sourceTable: dets_eqdt
       value_12:
         type: STRING
-        description: None
+        description: Parameter Value 12
         sourceColumn: value_12
         sourceTable: dets_eqdt
       value_13:
         type: STRING
-        description: None
+        description: Parameter Value 13
         sourceColumn: value_13
         sourceTable: dets_eqdt
       value_14:
         type: STRING
-        description: None
+        description: Parameter Value 14
         sourceColumn: value_14
         sourceTable: dets_eqdt
       value_15:
         type: STRING
-        description: None
+        description: Parameter Value 15
         sourceColumn: value_15
         sourceTable: dets_eqdt
       value_16:
         type: STRING
-        description: None
+        description: Parameter Value 16
         sourceColumn: value_16
         sourceTable: dets_eqdt
       value_17:
         type: STRING
-        description: None
+        description: Parameter Value 17
         sourceColumn: value_17
         sourceTable: dets_eqdt
       value_18:
         type: STRING
-        description: None
+        description: Parameter Value 18
         sourceColumn: value_18
         sourceTable: dets_eqdt
       value_19:
         type: STRING
-        description: None
+        description: Parameter Value 19
         sourceColumn: value_19
         sourceTable: dets_eqdt
       value_20:
         type: STRING
-        description: None
+        description: Parameter Value 20
         sourceColumn: value_20
         sourceTable: dets_eqdt
       value_21:
         type: STRING
-        description: None
+        description: Parameter Value 21
         sourceColumn: value_21
         sourceTable: dets_eqdt
       value_22:
         type: STRING
-        description: None
+        description: Parameter Value 22
         sourceColumn: value_22
         sourceTable: dets_eqdt
       value_23:
         type: STRING
-        description: None
+        description: Parameter Value 23
         sourceColumn: value_23
         sourceTable: dets_eqdt
       value_24:
         type: STRING
-        description: None
+        description: Parameter Value 24
         sourceColumn: value_24
         sourceTable: dets_eqdt
       value_25:
         type: STRING
-        description: None
+        description: Parameter Value 25
         sourceColumn: value_25
         sourceTable: dets_eqdt
       value_26:
         type: STRING
-        description: None
+        description: Parameter Value 26
         sourceColumn: value_26
         sourceTable: dets_eqdt
       value_27:
         type: STRING
-        description: None
+        description: Parameter Value 27
         sourceColumn: value_27
         sourceTable: dets_eqdt
       value_28:
         type: STRING
-        description: None
+        description: Parameter Value 28
         sourceColumn: value_28
         sourceTable: dets_eqdt
       value_29:
         type: STRING
-        description: None
+        description: Parameter Value 29
         sourceColumn: value_29
         sourceTable: dets_eqdt
       value_30:
         type: STRING
-        description: None
+        description: Parameter Value 30
         sourceColumn: value_30
         sourceTable: dets_eqdt
       value_31:
         type: STRING
-        description: None
+        description: Parameter Value 31
         sourceColumn: value_31
         sourceTable: dets_eqdt
       value_32:
         type: STRING
-        description: None
+        description: Parameter Value 32
         sourceColumn: value_32
         sourceTable: dets_eqdt
       value_33:
         type: STRING
-        description: None
+        description: Parameter Value 33
         sourceColumn: value_33
         sourceTable: dets_eqdt
       value_34:
         type: STRING
-        description: None
+        description: Parameter Value 34
         sourceColumn: value_34
         sourceTable: dets_eqdt
       value_35:
         type: STRING
-        description: None
+        description: Parameter Value 35
         sourceColumn: value_35
         sourceTable: dets_eqdt
       value_36:
         type: STRING
-        description: None
+        description: Parameter Value 36
         sourceColumn: value_36
         sourceTable: dets_eqdt
       value_37:
         type: STRING
-        description: None
+        description: Parameter Value 37
         sourceColumn: value_37
         sourceTable: dets_eqdt
       value_38:
         type: STRING
-        description: None
+        description: Parameter Value 38
         sourceColumn: value_38
         sourceTable: dets_eqdt
       value_39:
         type: STRING
-        description: None
+        description: Parameter Value 39
         sourceColumn: value_39
         sourceTable: dets_eqdt
       value_40:
         type: STRING
-        description: None
+        description: Parameter Value 40
         sourceColumn: value_40
         sourceTable: dets_eqdt
       value_41:
         type: STRING
-        description: None
+        description: Parameter Value 41
         sourceColumn: value_41
         sourceTable: dets_eqdt
       value_42:
         type: STRING
-        description: None
+        description: Parameter Value 42
         sourceColumn: value_42
         sourceTable: dets_eqdt
       value_43:
         type: STRING
-        description: None
+        description: Parameter Value 43
         sourceColumn: value_43
         sourceTable: dets_eqdt
       value_44:
         type: STRING
-        description: None
+        description: Parameter Value 44
         sourceColumn: value_44
         sourceTable: dets_eqdt
       value_45:
         type: STRING
-        description: None
+        description: Parameter Value 45
         sourceColumn: value_45
         sourceTable: dets_eqdt
       value_46:
         type: STRING
-        description: None
+        description: Parameter Value 46
         sourceColumn: value_46
         sourceTable: dets_eqdt
       value_47:
         type: STRING
-        description: None
+        description: Parameter Value 47
         sourceColumn: value_47
         sourceTable: dets_eqdt
       value_48:
         type: STRING
-        description: None
+        description: Parameter Value 48
         sourceColumn: value_48
         sourceTable: dets_eqdt
       value_49:
         type: STRING
-        description: None
+        description: Parameter Value 49
         sourceColumn: value_49
         sourceTable: dets_eqdt
       value_50:
         type: STRING
-        description: None
+        description: Parameter Value 50
         sourceColumn: value_50
         sourceTable: dets_eqdt
       value_51:
         type: STRING
-        description: None
+        description: Parameter Value 51
         sourceColumn: value_51
         sourceTable: dets_eqdt
       dt_filter:
         type: DATETIME
-        description: None
+        description: Parameter Value 52
         sourceColumn: Derived
         sourceTable: dets_eqdt
       Equipment_name:
         type: STRING
-        description: None
-        sourceColumn: value_45
+        description: Name of the Equipment
+        sourceColumn: Equipment name
         sourceTable: Engine_Parameter_Data_AUT
       Parameter_Name:
         type: STRING
-        description: None
+        description: Parameter Description
         sourceColumn: Parameter Name
         sourceTable: Engine_Parameter_Data_AUT
       Unit/Decision:
         type: STRING
-        description: None
+        description: Unit of Measurement/ Type of Decision
         sourceColumn: Unit/Decision
         sourceTable: Engine_Parameter_Data_AUT
       Line:
         type: STRING
-        description: None
-        sourceColumn: Line
+        description: Assembly Line Number
+        sourceColumn: "Line "
         sourceTable: Engine_Parameter_Data_AUT
       Model_Family:
         type: STRING
-        description: None
+        description: Model ID of Engine
         sourceColumn: Model Family
         sourceTable: Engine_Parameter_Data_AUT
       Equipment_Code:
         type: STRING
-        description: None
+        description: Equipment Code
         sourceColumn: Equipment Code
         sourceTable: Engine_Parameter_Data_AUT
       LSL:
         type: STRING
-        description: None
+        description: Lower Specification Limit
         sourceColumn: LSL
         sourceTable: Engine_Parameter_Data_AUT
       USL:
         type: STRING
-        description: None
+        description: Upper Specification Limit
         sourceColumn: USL
         sourceTable: Engine_Parameter_Data_AUT
-      ETL_Inserted_Date:
+      etl_inserted_date:
         type: DATETIME
-        description: " "
+        description: ""
         sourceColumn: ""
-        sourceTable: ""
-      ETL_Modified_Date:
+        sourceTable: Manual
+      etl_modified_date:
         type: DATETIME
-        description: " "
+        description: ""
         sourceColumn: ""
-        sourceTable: ""
-      ETL_Created_By:
+        sourceTable: Manual
+      etl_created_by:
         type: STRING
-        description: " "
+        description: ""
         sourceColumn: ""
-        sourceTable: ""
-      ETL_Updated_By:
+        sourceTable: Manual
+      etl_updated_by:
         type: STRING
-        description: " "
+        description: ""
         sourceColumn: ""
-        sourceTable: ""
+        sourceTable: Manual
   stateStoreType: loadDataIceberg
   isProfilingEnabled: false
   updateStrategy: Overwrite
-  tableName: msil_transformed_layer.Engine_Parameter_Details
+  tableName: msil_dataverse_production_catalog.Engine_Parameter_Details
   warehousePath: s3://msil-dataverse-production/
   catalogName: glue
   optional:
