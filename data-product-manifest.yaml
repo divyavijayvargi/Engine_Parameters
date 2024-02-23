@@ -1,7 +1,8 @@
-version: 0.0.6
+version: 0.0.10
 jobId: "1042"
 jobName: Engine Parameter Summary
 jobType: Aggregated Data Product
+domain: production
 alias: load_adp_engine_parameters
 discoveryPort:
   name: Engine Parameter Summary
@@ -26,353 +27,353 @@ productState:
     properties:
       engine_prefix:
         type: STRING
-        description: None
+        description: Model Code of  Engine
         sourceColumn: engine_prefix
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       engine_no:
         type: STRING
-        description: None
+        description: ID of Engine
         sourceColumn: engine_no
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       oper_date:
         type: DATETIME
-        description: None
+        description: Operation Date
         sourceColumn: oper_date
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       machine_id:
         type: STRING
-        description: None
+        description: Id of Machine or Equipment involved
         sourceColumn: machine_id
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       description:
         type: STRING
-        description: None
+        description: Equipment Description
         sourceColumn: description
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_1:
         type: STRING
-        description: None
+        description: Parameter Value 1
         sourceColumn: value_1
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_2:
         type: STRING
-        description: None
+        description: Parameter Value 2
         sourceColumn: value_2
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_3:
         type: STRING
-        description: None
+        description: Parameter Value 3
         sourceColumn: value_3
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_4:
         type: STRING
-        description: None
+        description: Parameter Value 4
         sourceColumn: value_4
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_5:
         type: STRING
-        description: None
+        description: Parameter Value 5
         sourceColumn: value_5
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_6:
         type: STRING
-        description: None
+        description: Parameter Value 6
         sourceColumn: value_6
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_7:
         type: STRING
-        description: None
+        description: Parameter Value 7
         sourceColumn: value_7
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_8:
         type: STRING
-        description: None
+        description: Parameter Value 8
         sourceColumn: value_8
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_9:
         type: STRING
-        description: None
+        description: Parameter Value 9
         sourceColumn: value_9
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_10:
         type: STRING
-        description: None
+        description: Parameter Value 10
         sourceColumn: value_10
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_11:
         type: STRING
-        description: None
+        description: Parameter Value 11
         sourceColumn: value_11
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_12:
         type: STRING
-        description: None
+        description: Parameter Value 12
         sourceColumn: value_12
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_13:
         type: STRING
-        description: None
+        description: Parameter Value 13
         sourceColumn: value_13
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_14:
         type: STRING
-        description: None
+        description: Parameter Value 14
         sourceColumn: value_14
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_15:
         type: STRING
-        description: None
+        description: Parameter Value 15
         sourceColumn: value_15
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_16:
         type: STRING
-        description: None
+        description: Parameter Value 16
         sourceColumn: value_16
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_17:
         type: STRING
-        description: None
+        description: Parameter Value 17
         sourceColumn: value_17
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_18:
         type: STRING
-        description: None
+        description: Parameter Value 18
         sourceColumn: value_18
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_19:
         type: STRING
-        description: None
+        description: Parameter Value 19
         sourceColumn: value_19
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_20:
         type: STRING
-        description: None
+        description: Parameter Value 20
         sourceColumn: value_20
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_21:
         type: STRING
-        description: None
+        description: Parameter Value 21
         sourceColumn: value_21
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_22:
         type: STRING
-        description: None
+        description: Parameter Value 22
         sourceColumn: value_22
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_23:
         type: STRING
-        description: None
+        description: Parameter Value 23
         sourceColumn: value_23
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_24:
         type: STRING
-        description: None
+        description: Parameter Value 24
         sourceColumn: value_24
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_25:
         type: STRING
-        description: None
+        description: Parameter Value 25
         sourceColumn: value_25
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_26:
         type: STRING
-        description: None
+        description: Parameter Value 26
         sourceColumn: value_26
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_27:
         type: STRING
-        description: None
+        description: Parameter Value 27
         sourceColumn: value_27
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_28:
         type: STRING
-        description: None
+        description: Parameter Value 28
         sourceColumn: value_28
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_29:
         type: STRING
-        description: None
+        description: Parameter Value 29
         sourceColumn: value_29
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_30:
         type: STRING
-        description: None
+        description: Parameter Value 30
         sourceColumn: value_30
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_31:
         type: STRING
-        description: None
+        description: Parameter Value 31
         sourceColumn: value_31
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_32:
         type: STRING
-        description: None
+        description: Parameter Value 32
         sourceColumn: value_32
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_33:
         type: STRING
-        description: None
+        description: Parameter Value 33
         sourceColumn: value_33
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_34:
         type: STRING
-        description: None
+        description: Parameter Value 34
         sourceColumn: value_34
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_35:
         type: STRING
-        description: None
+        description: Parameter Value 35
         sourceColumn: value_35
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_36:
         type: STRING
-        description: None
+        description: Parameter Value 36
         sourceColumn: value_36
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_37:
         type: STRING
-        description: None
+        description: Parameter Value 37
         sourceColumn: value_37
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_38:
         type: STRING
-        description: None
+        description: Parameter Value 38
         sourceColumn: value_38
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_39:
         type: STRING
-        description: None
+        description: Parameter Value 39
         sourceColumn: value_39
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_40:
         type: STRING
-        description: None
+        description: Parameter Value 40
         sourceColumn: value_40
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_41:
         type: STRING
-        description: None
+        description: Parameter Value 41
         sourceColumn: value_41
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_42:
         type: STRING
-        description: None
+        description: Parameter Value 42
         sourceColumn: value_42
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_43:
         type: STRING
-        description: None
+        description: Parameter Value 43
         sourceColumn: value_43
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_44:
         type: STRING
-        description: None
+        description: Parameter Value 44
         sourceColumn: value_44
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_45:
         type: STRING
-        description: None
+        description: Parameter Value 45
         sourceColumn: value_45
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_46:
         type: STRING
-        description: None
+        description: Parameter Value 46
         sourceColumn: value_46
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_47:
         type: STRING
-        description: None
+        description: Parameter Value 47
         sourceColumn: value_47
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_48:
         type: STRING
-        description: None
+        description: Parameter Value 48
         sourceColumn: value_48
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_49:
         type: STRING
-        description: None
+        description: Parameter Value 49
         sourceColumn: value_49
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_50:
         type: STRING
-        description: None
+        description: Parameter Value 50
         sourceColumn: value_50
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       value_51:
         type: STRING
-        description: None
+        description: Parameter Value 51
         sourceColumn: value_51
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       dt_filter:
         type: DATETIME
-        description: None
+        description: Date & Time  related information
         sourceColumn: dt_filter
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       Equipment_name:
         type: STRING
-        description: None
+        description: Name of the Equipment
         sourceColumn: Equipment_name
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       Parameter_Name:
         type: STRING
-        description: None
+        description: Parameter Description
         sourceColumn: Parameter_Name
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       Unit/Decision:
         type: STRING
-        description: None
+        description: Unit of Measurement/ Type of Decision
         sourceColumn: Unit/Decision
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       Line:
         type: STRING
-        description: None
+        description: Assembly Line Number
         sourceColumn: Line
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       Model_Family:
         type: STRING
-        description: None
+        description: Model ID of Engine
         sourceColumn: Model_Family
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       Equipment_Code:
         type: STRING
-        description: None
+        description: Equipment Code
         sourceColumn: Equipment_Code
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       LSL:
         type: STRING
-        description: None
+        description: Lower Specification Limit
         sourceColumn: LSL
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       USL:
         type: STRING
-        description: None
+        description: Upper Specification Limit
         sourceColumn: USL
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
       etl_inserted_date:
         type: DATETIME
-        description: None
+        description: ""
         sourceColumn: ""
-        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+        sourceTable: manual
       etl_modified_date:
         type: DATETIME
-        description: None
+        description: ""
         sourceColumn: ""
-        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+        sourceTable: manual
       etl_created_by:
         type: STRING
-        description: None
+        description: ""
         sourceColumn: ""
-        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+        sourceTable: manual
       etl_updated_by:
         type: STRING
-        description: None
+        description: ""
         sourceColumn: ""
-        sourceTable: SADP_ENGINE_PARAMETER_DETAILS
+        sourceTable: manual
   stateStoreType: loadDataIceberg
   isProfilingEnabled: false
   updateStrategy: Overwrite
-  tableName: msil_transformed_layer.Engine_Parameter_Summary
+  tableName: msil_dataverse_production_catalog.Engine_Parameter_Summary
   warehousePath: s3://msil-dataverse-production/
   catalogName: glue
   optional:
