@@ -1,4 +1,4 @@
-version: 0.0.10
+version: 0.0.12
 jobId: "1042"
 jobName: Engine Parameter Summary
 jobType: Aggregated Data Product
@@ -371,7 +371,7 @@ productState:
         sourceColumn: ""
         sourceTable: manual
   stateStoreType: loadDataIceberg
-  isProfilingEnabled: false
+  isProfilingEnabled: true
   updateStrategy: Overwrite
   tableName: msil_dataverse_production_catalog.Engine_Parameter_Summary
   warehousePath: s3://msil-dataverse-production/
