@@ -1,4 +1,4 @@
-version: 0.0.56
+version: 0.0.57
 jobId: "1019"
 jobName: Engine Parameters Details
 jobType: Source Aligned Data Product
@@ -366,7 +366,7 @@ productState:
         description: Parameter Description
         sourceColumn: Parameter Name
         sourceTable: Engine_Parameter_Data_AUT
-      Unit/Decision:
+      Unit:
         type: STRING
         description: Unit of Measurement/ Type of Decision
         sourceColumn: Unit/Decision
@@ -476,18 +476,19 @@ transformation:
       value_46,   eqdt.eqdt_value_47 AS value_47,   eqdt.eqdt_value_48 AS
       value_48,   eqdt.eqdt_value_49 AS value_49,   eqdt.eqdt_value_50 AS
       value_50,   eqdt.eqdt_value_51 AS value_51,   TO_DATE (eqdt.eqdt_date,
-      'dd/MM/yyyy') AS dt_filter,   coalesce(epda.`Equipment name`,
-      epda1.`Equipment name`, NULL) as
-      Equipment_name,   coalesce(epda.`Parameter Name`, epda1.`Parameter Name`,
-      NULL) as Parameter_Name,   coalesce(epda.`Unit/Decision`,
-      epda1.`Unit/Decision`, NULL) as `Unit/Decision`,   coalesce(epda.`Line `,
-      epda1.`Line `, NULL) as Line ,   coalesce(epda.`Model Family`,
-      epda1.`Model Family`, NULL) as Model_Family,   CASE     WHEN
-      coalesce(epda.`Equipment Code`, epda1.`Equipment Code`, '') = 'r' THEN
-      NULL     WHEN coalesce(epda.`Equipment Code`, epda1.`Equipment Code`, '')
-      = 'NA' THEN NULL     ELSE regexp_replace(coalesce(epda.`Equipment Code`,
-      epda1.`Equipment Code`, ''), '-', '')   END AS
-      Equipment_Code,   CASE     WHEN coalesce(epda.LSL, epda1.LSL, '')  = 'r'
+      'dd/MM/yyyy') AS dt_filter,   coalesce(     epda.`Equipment
+      name`,     epda1.`Equipment name`,     NULL   ) as
+      Equipment_name,   coalesce(     epda.`Parameter
+      Name`,     epda1.`Parameter Name`,     NULL   ) as
+      Parameter_Name,   coalesce(epda.`Unit/Decision`, epda1.`Unit/Decision`,
+      NULL) as Unit,   coalesce(epda.`Line `, epda1.`Line `, NULL) as
+      Line,   coalesce(epda.`Model Family`, epda1.`Model Family`, NULL) as
+      Model_Family,   CASE     WHEN coalesce(epda.`Equipment Code`,
+      epda1.`Equipment Code`, '') = 'r' THEN NULL     WHEN
+      coalesce(epda.`Equipment Code`, epda1.`Equipment Code`, '') = 'NA' THEN
+      NULL     ELSE regexp_replace (       coalesce(epda.`Equipment Code`,
+      epda1.`Equipment Code`, ''),       '-',       ''     )   END AS
+      Equipment_Code,   CASE     WHEN coalesce(epda.LSL, epda1.LSL, '') = 'r'
       THEN NULL     WHEN coalesce(epda.LSL, epda1.LSL, '') = 'NA' THEN
       NULL     ELSE coalesce(epda.LSL, epda1.LSL, '')   END AS
       LSL,   CASE     WHEN coalesce(epda.USL, epda1.USL, '') = 'r' THEN
@@ -505,9 +506,9 @@ transformation:
       (     select       *     from       Engine_Parameter_Data_AUT     where       (         (`Model
       Family` is not NULL)         and (ltrim (rtrim (`Model Family`)) !=
       '')       )   ) epda1 ON eqdt.eqdt_eqmt_code = regexp_replace
-      (epda1.`Equipment Code`, '-', '')   and ltrim (rtrim
-      (left(eqdt.eqdt_engine_prefix, 4 ) )) = ltrim (rtrim (epda1.`Model
-      Family`)) WHERE   TO_DATE (eqdt.eqdt_date, 'dd/MM/yyyy') >= DATE_ADD
+      (epda1.`Equipment Code`, '-', '')   and ltrim (rtrim (left
+      (eqdt.eqdt_engine_prefix, 4))) = ltrim (rtrim (epda1.`Model Family`))
+      WHERE   TO_DATE (eqdt.eqdt_date, 'dd/MM/yyyy') >= DATE_ADD
       (CURRENT_DATE(), -1095)   AND eqdt.eqdt_eqmt_code LIKE 'TW__S_'   AND
       (     eqdt.eqdt_engine_prefix LIKE '%AF21%'     OR eqdt.eqdt_engine_prefix
       LIKE '%AF24%'     OR eqdt.eqdt_engine_prefix LIKE '%AEA1%'     OR
