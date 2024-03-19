@@ -1,4 +1,4 @@
-version: 0.0.12
+version: 0.0.14
 jobId: "1042"
 jobName: Engine Parameter Summary
 jobType: Aggregated Data Product
@@ -320,7 +320,7 @@ productState:
         description: Parameter Description
         sourceColumn: Parameter_Name
         sourceTable: SADP_ENGINE_PARAMETER_DETAILS
-      Unit/Decision:
+      Unit:
         type: STRING
         description: Unit of Measurement/ Type of Decision
         sourceColumn: Unit/Decision
@@ -492,35 +492,32 @@ transformation:
       AS STRING)         ) AS DECIMAL(20, 1)       )       ELSE
       NULL     END     ELSE SADP_ENGINE_PARAMETER_DETAILS.value_13   END AS
       value_13,   SADP_ENGINE_PARAMETER_DETAILS.value_14,   SADP_ENGINE_PARAMETER_DETAILS.value_15,   CASE     WHEN
-      regexp_count (       CAST(         SADP_ENGINE_PARAMETER_DETAILS.value_16
-      AS STRING       ),       '^[0-9 .]+$'     ) = 1     AND
-      TRIM(       CAST(         SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
-      STRING       )     ) NOT LIKE '%.%' THEN CASE       WHEN
-      TRIM(         CAST(           SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
-      STRING         )       ) LIKE '% %' THEN regexp_replace
-      (         TRIM(           CAST(             SADP_ENGINE_PARAMETER_DETAILS.value_16
-      AS STRING           )         ),         '
-      ',         '.0'       )       WHEN length
-      (         TRIM(           CAST(             SADP_ENGINE_PARAMETER_DETAILS.value_16
-      AS STRING           )         )       ) > 2 THEN CONCAT
-      (         substring(           TRIM(             CAST(               SADP_ENGINE_PARAMETER_DETAILS.value_16
+      regexp_count (       CAST(SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING),       '^[0-9 .]+$'     ) = 1     AND
+      TRIM(       CAST(SADP_ENGINE_PARAMETER_DETAILS.value_16 AS STRING)     )
+      NOT LIKE '%.%' THEN CASE       WHEN
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING)       ) LIKE '% %' THEN regexp_replace
+      (         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING)         ),         ' ',         '.0'       )       WHEN length
+      (         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING)         )       ) > 2 THEN CONCAT
+      (         substring(           TRIM(             CAST(SADP_ENGINE_PARAMETER_DETAILS.value_16
       AS
-      STRING             )           ),           1,           2         ),         '.',         substring(           TRIM(             CAST(               SADP_ENGINE_PARAMETER_DETAILS.value_16
-      AS
-      STRING             )           ),           3         )       )       WHEN
-      length
-      (         TRIM(           CAST(             SADP_ENGINE_PARAMETER_DETAILS.value_16
-      AS STRING           )         )       ) <= 2       AND
-      TRIM(         CAST(           SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
-      STRING         )       ) <> '.'       AND
-      TRIM(         CAST(           SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
-      STRING         )       ) <> ','       AND
-      TRIM(         CAST(           SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
-      STRING         )       ) <> '' THEN
-      CAST(         TRIM(           CAST(             SADP_ENGINE_PARAMETER_DETAILS.value_16
-      AS STRING           )         ) AS DECIMAL(20, 1)       )       ELSE
+      STRING)           ),           1,           2         ),         '.',         substring(           TRIM(             CAST(SADP_ENGINE_PARAMETER_DETAILS.value_16
+      AS STRING)           ),           3         )       )       WHEN length
+      (         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING)         )       ) <= 2       AND
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING)       ) <> '.'       AND
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING)       ) <> ','       AND
+      TRIM(         CAST(SADP_ENGINE_PARAMETER_DETAILS.value_16 AS
+      STRING)       ) <> '' THEN
+      CAST(         TRIM(           CAST(SADP_ENGINE_PARAMETER_DETAILS.value_16
+      AS STRING)         ) AS DECIMAL(20, 1)       )       ELSE
       NULL     END     ELSE SADP_ENGINE_PARAMETER_DETAILS.value_16   END AS
-      value_16,   SADP_ENGINE_PARAMETER_DETAILS.value_17,   SADP_ENGINE_PARAMETER_DETAILS.value_18,   SADP_ENGINE_PARAMETER_DETAILS.value_19,   SADP_ENGINE_PARAMETER_DETAILS.value_20,   SADP_ENGINE_PARAMETER_DETAILS.value_21,   SADP_ENGINE_PARAMETER_DETAILS.value_22,   SADP_ENGINE_PARAMETER_DETAILS.value_23,   SADP_ENGINE_PARAMETER_DETAILS.value_24,   SADP_ENGINE_PARAMETER_DETAILS.value_25,   SADP_ENGINE_PARAMETER_DETAILS.value_26,   SADP_ENGINE_PARAMETER_DETAILS.value_27,   SADP_ENGINE_PARAMETER_DETAILS.value_28,   SADP_ENGINE_PARAMETER_DETAILS.value_29,   SADP_ENGINE_PARAMETER_DETAILS.value_30,   SADP_ENGINE_PARAMETER_DETAILS.value_31,   SADP_ENGINE_PARAMETER_DETAILS.value_32,   SADP_ENGINE_PARAMETER_DETAILS.value_33,   SADP_ENGINE_PARAMETER_DETAILS.value_34,   SADP_ENGINE_PARAMETER_DETAILS.value_35,   SADP_ENGINE_PARAMETER_DETAILS.value_36,   SADP_ENGINE_PARAMETER_DETAILS.value_37,   SADP_ENGINE_PARAMETER_DETAILS.value_38,   SADP_ENGINE_PARAMETER_DETAILS.value_39,   SADP_ENGINE_PARAMETER_DETAILS.value_40,   SADP_ENGINE_PARAMETER_DETAILS.value_41,   SADP_ENGINE_PARAMETER_DETAILS.value_42,   SADP_ENGINE_PARAMETER_DETAILS.value_43,   SADP_ENGINE_PARAMETER_DETAILS.value_44,   SADP_ENGINE_PARAMETER_DETAILS.value_45,   SADP_ENGINE_PARAMETER_DETAILS.value_46,   SADP_ENGINE_PARAMETER_DETAILS.value_47,   SADP_ENGINE_PARAMETER_DETAILS.value_48,   SADP_ENGINE_PARAMETER_DETAILS.value_49,   SADP_ENGINE_PARAMETER_DETAILS.value_50,   SADP_ENGINE_PARAMETER_DETAILS.value_51,   SADP_ENGINE_PARAMETER_DETAILS.dt_filter,   SADP_ENGINE_PARAMETER_DETAILS.Equipment_name,   SADP_ENGINE_PARAMETER_DETAILS.Parameter_Name,   SADP_ENGINE_PARAMETER_DETAILS.`Unit/Decision`,   SADP_ENGINE_PARAMETER_DETAILS.Line,   SADP_ENGINE_PARAMETER_DETAILS.Model_Family,   SADP_ENGINE_PARAMETER_DETAILS.Equipment_Code,   SADP_ENGINE_PARAMETER_DETAILS.LSL,   SADP_ENGINE_PARAMETER_DETAILS.USL,   current_timestamp()
+      value_16,   SADP_ENGINE_PARAMETER_DETAILS.value_17,   SADP_ENGINE_PARAMETER_DETAILS.value_18,   SADP_ENGINE_PARAMETER_DETAILS.value_19,   SADP_ENGINE_PARAMETER_DETAILS.value_20,   SADP_ENGINE_PARAMETER_DETAILS.value_21,   SADP_ENGINE_PARAMETER_DETAILS.value_22,   SADP_ENGINE_PARAMETER_DETAILS.value_23,   SADP_ENGINE_PARAMETER_DETAILS.value_24,   SADP_ENGINE_PARAMETER_DETAILS.value_25,   SADP_ENGINE_PARAMETER_DETAILS.value_26,   SADP_ENGINE_PARAMETER_DETAILS.value_27,   SADP_ENGINE_PARAMETER_DETAILS.value_28,   SADP_ENGINE_PARAMETER_DETAILS.value_29,   SADP_ENGINE_PARAMETER_DETAILS.value_30,   SADP_ENGINE_PARAMETER_DETAILS.value_31,   SADP_ENGINE_PARAMETER_DETAILS.value_32,   SADP_ENGINE_PARAMETER_DETAILS.value_33,   SADP_ENGINE_PARAMETER_DETAILS.value_34,   SADP_ENGINE_PARAMETER_DETAILS.value_35,   SADP_ENGINE_PARAMETER_DETAILS.value_36,   SADP_ENGINE_PARAMETER_DETAILS.value_37,   SADP_ENGINE_PARAMETER_DETAILS.value_38,   SADP_ENGINE_PARAMETER_DETAILS.value_39,   SADP_ENGINE_PARAMETER_DETAILS.value_40,   SADP_ENGINE_PARAMETER_DETAILS.value_41,   SADP_ENGINE_PARAMETER_DETAILS.value_42,   SADP_ENGINE_PARAMETER_DETAILS.value_43,   SADP_ENGINE_PARAMETER_DETAILS.value_44,   SADP_ENGINE_PARAMETER_DETAILS.value_45,   SADP_ENGINE_PARAMETER_DETAILS.value_46,   SADP_ENGINE_PARAMETER_DETAILS.value_47,   SADP_ENGINE_PARAMETER_DETAILS.value_48,   SADP_ENGINE_PARAMETER_DETAILS.value_49,   SADP_ENGINE_PARAMETER_DETAILS.value_50,   SADP_ENGINE_PARAMETER_DETAILS.value_51,   SADP_ENGINE_PARAMETER_DETAILS.dt_filter,   SADP_ENGINE_PARAMETER_DETAILS.Equipment_name,   SADP_ENGINE_PARAMETER_DETAILS.Parameter_Name,   SADP_ENGINE_PARAMETER_DETAILS.Unit,   SADP_ENGINE_PARAMETER_DETAILS.Line,   SADP_ENGINE_PARAMETER_DETAILS.Model_Family,   SADP_ENGINE_PARAMETER_DETAILS.Equipment_Code,   SADP_ENGINE_PARAMETER_DETAILS.LSL,   SADP_ENGINE_PARAMETER_DETAILS.USL,   current_timestamp()
       as etl_inserted_date,   current_timestamp() as
       etl_modified_date,   'platform_admin' as
       etl_created_by,   'platform_admin' as etl_updated_by
