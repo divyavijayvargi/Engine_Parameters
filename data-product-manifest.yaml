@@ -1,4 +1,4 @@
-version: 0.0.54
+version: 0.0.56
 jobId: "1019"
 jobName: Engine Parameters Details
 jobType: Source Aligned Data Product
@@ -419,7 +419,7 @@ productState:
   stateStoreType: loadDataIceberg
   isProfilingEnabled: true
   updateStrategy: Overwrite
-  tableName: msil_dataverse_production_catalog.engine_parameter_details
+  tableName: msil_dataverse_production_catalog.Engine_Parameter_Details
   warehousePath: s3://msil-dataverse-production/
   catalogName: glue
   optional:
